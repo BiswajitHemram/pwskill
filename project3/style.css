@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    align-items: center;
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo > img{
+    width: 92px; 
+    height: 32px;
+}
+
+.line{
+    border: 1px solid white;
+    width: 1px;
+    margin-left: 60px;
+    height: 50px;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 60px;
+}
+
+.logo > img, li{
+    cursor: pointer;
+}
+
+.token{
+    padding: 7px 28px;
+    background: #ba0cc5;
+    border-radius: 6px;
+    font-weight: inherit;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero{
+    background-image: url(./assest/bg.png);
+    height: calc(100vh - 90px);
+    background-size: cover;
+    text-align: center;
+}
+
+.hero-heading{
+    max-width: 846px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+.hero-description{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.hero-btn{
+    background: #ba0cc5;
+    color: #ffffff;
+    border: none;
+    padding: 14px 22px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
