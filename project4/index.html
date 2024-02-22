@@ -42,49 +42,61 @@
 
     <script>
         const para = document.querySelector("p");
-        const mobile = window.matchMedia('(max-width: 425px)');
-        const tablet = window.matchMedia('(max-width: 768px) and (min-width: 426px)');
-        const laptop = window.matchMedia('(max-width: 1024px) and (min-width: 769px)');
-        const large = window.matchMedia('(max-width: 1440px) and (min-width: 1025px)');
-        const max = window.matchMedia('(min-width: 1441px)');
-
-
-        function handleChangeMobile(e) {
-            if (e.matches) {
+        window.matchMedia('(max-width: 425px)').addListener((e)=>{
+            // if (e.matches) {
                 para.textContent = "Screen Size: 425px";
-            }
-        }
-
-        function handleChangeTablet(e) {
-            if (e.matches) {
+            // }
+        });
+        window.matchMedia('(max-width: 768px) and (min-width: 426px)').addListener((e)=>{
+            // if (e.matches) {
                 para.textContent = "Screen Size: 768px";
-            }
-        }
-
-        function handlechangeLaptop(e) {
-            if (e.matches) {
+            // }
+        });
+        window.matchMedia('(max-width: 1024px) and (min-width: 769px)').addListener((e)=>{
+            // if (e.matches) {
                 para.textContent = "Screen Size: 1024px";
-            }
-        }
-
-        function handlechangeLarge(e) {
-            if (e.matches) {
+            // }
+        });
+        const large = window.matchMedia('(max-width: 1440px) and (min-width: 1025px)').addListener((e)=>{
+            // if (e.matches) {
                 para.textContent = "Screen Size: 1440px";
-            }
-        }
-
-        function handleChangeMax(e) {
-            if (e.matches) {
+            // }
+        });
+        const max = window.matchMedia('(min-width: 1441px)').addListener((e)=>{
+            // if (e.matches) {
                 para.textContent = "";
-            }
-        }
+            // }
+        });
 
 
-        mobile.addListener(handleChangeMobile);
-        tablet.addListener(handleChangeTablet);
-        laptop.addListener(handlechangeLaptop);
-        large.addListener(handlechangeLarge);
-        max.addListener(handleChangeMax);
+        // function handleChangeMobile(e) {
+            
+        // }
+
+        // function handleChangeTablet(e) {
+        // }
+
+        // function handlechangeLaptop(e) {
+        // }
+
+        // function handlechangeLarge(e) {
+        //     if (e.matches) {
+        //         para.textContent = "Screen Size: 1440px";
+        //     }
+        // }
+
+        // function handleChangeMax(e) {
+        //     if (e.matches) {
+        //         para.textContent = "";
+        //     }
+        // }
+
+
+        // mobile.addListener(handleChangeMobile);
+        // tablet.addListener(handleChangeTablet);
+        // laptop.addListener(handlechangeLaptop);
+        // large.addListener(handlechangeLarge);
+        // max.addListener(handleChangeMax);
     </script>
 </body>
 
