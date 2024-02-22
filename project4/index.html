@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+</head>
+<style>
+    body {
+        background-color: #7fffd5;
+    }
+
+    @media screen and (max-width: 425px) {
+        body {
+            background-color: rgb(190, 15, 15);
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        body {
+            background-color: rgb(0, 255, 255);
+        }
+    }
+
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
+        body {
+            background-color: rgb(255, 166, 0);
+        }
+    }
+
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+        body {
+            background-color: rgb(81, 247, 5);
+        }
+    }
+</style>
+
+<body>
+    <h1>This is Media Query demo page.</h1>
+    <p></p>
+
+    <script>
+        const para = document.querySelector("p");
+        const mobile = window.matchMedia('(max-width: 425px)');
+        const tablet = window.matchMedia('(max-width: 768px) and (min-width: 426px)');
+        const laptop = window.matchMedia('(max-width: 1024px) and (min-width: 769px)');
+        const large = window.matchMedia('(max-width: 1440px) and (min-width: 1025px)');
+        const max = window.matchMedia('(min-width: 1441px)');
+
+
+        function handleChangeMobile(e) {
+            if (e.matches) {
+                para.textContent = "Screen Size: 425px";
+            }
+        }
+
+        function handleChangeTablet(e) {
+            if (e.matches) {
+                para.textContent = "Screen Size: 768px";
+            }
+        }
+
+        function handlechangeLaptop(e) {
+            if (e.matches) {
+                para.textContent = "Screen Size: 1024px";
+            }
+        }
+
+        function handlechangeLarge(e) {
+            if (e.matches) {
+                para.textContent = "Screen Size: 1440px";
+            }
+        }
+
+        function handleChangeMax(e) {
+            if (e.matches) {
+                para.textContent = "";
+            }
+        }
+
+
+        mobile.addListener(handleChangeMobile);
+        tablet.addListener(handleChangeTablet);
+        laptop.addListener(handlechangeLaptop);
+        large.addListener(handlechangeLarge);
+        max.addListener(handleChangeMax);
+    </script>
+</body>
+
+</html>
