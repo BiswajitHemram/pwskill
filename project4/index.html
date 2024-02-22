@@ -9,11 +9,21 @@
 <style>
     body {
         background-color: #7fffd5;
+        
+    }
+    .box{
+        display: none;
     }
 
     @media screen and (max-width: 425px) {
         body {
             background-color: rgb(190, 15, 15);
+        }
+        .body-item{
+            display: none;
+        }
+        .box1{
+            display: block;
         }
     }
 
@@ -21,11 +31,23 @@
         body {
             background-color: rgb(0, 255, 255);
         }
+        .body-item{
+            display: none;
+        }
+        .box2{
+            display: block;
+        }
     }
 
     @media screen and (max-width: 1024px) and (min-width: 769px) {
         body {
             background-color: rgb(255, 166, 0);
+        }
+        .body-item{
+            display: none;
+        }
+        .box3{
+            display: block;
         }
     }
 
@@ -33,71 +55,33 @@
         body {
             background-color: rgb(81, 247, 5);
         }
+        .body-item{
+            display: none;
+        }
+        .box4{
+            display: block;
+        }
     }
 </style>
 
 <body>
-    <h1>This is Media Query demo page.</h1>
-    <p></p>
-
-    <script>
-        const para = document.querySelector("p");
-        window.matchMedia('(max-width: 425px)').addListener((e)=>{
-            // if (e.matches) {
-                para.textContent = "Screen Size: 425px";
-            // }
-        });
-        window.matchMedia('(max-width: 768px) and (min-width: 426px)').addListener((e)=>{
-            // if (e.matches) {
-                para.textContent = "Screen Size: 768px";
-            // }
-        });
-        window.matchMedia('(max-width: 1024px) and (min-width: 769px)').addListener((e)=>{
-            // if (e.matches) {
-                para.textContent = "Screen Size: 1024px";
-            // }
-        });
-        const large = window.matchMedia('(max-width: 1440px) and (min-width: 1025px)').addListener((e)=>{
-            // if (e.matches) {
-                para.textContent = "Screen Size: 1440px";
-            // }
-        });
-        const max = window.matchMedia('(min-width: 1441px)').addListener((e)=>{
-            // if (e.matches) {
-                para.textContent = "";
-            // }
-        });
-
-
-        // function handleChangeMobile(e) {
-            
-        // }
-
-        // function handleChangeTablet(e) {
-        // }
-
-        // function handlechangeLaptop(e) {
-        // }
-
-        // function handlechangeLarge(e) {
-        //     if (e.matches) {
-        //         para.textContent = "Screen Size: 1440px";
-        //     }
-        // }
-
-        // function handleChangeMax(e) {
-        //     if (e.matches) {
-        //         para.textContent = "";
-        //     }
-        // }
-
-
-        // mobile.addListener(handleChangeMobile);
-        // tablet.addListener(handleChangeTablet);
-        // laptop.addListener(handlechangeLaptop);
-        // large.addListener(handlechangeLarge);
-        // max.addListener(handleChangeMax);
-    </script>
+    <h1 class="body-item">This is Media Query demo page.</h1>
+    <div class="box box1">
+        <h1>This is Media Query demo page.</h1>
+        <p>Screen Size: 425px</p>
+    </div>
+    <div class="box box2">
+        <h1>This is Media Query demo page.</h1>
+        <p>Screen Size: 768px</p>
+    </div>
+    <div class="box box3">
+        <h1>This is Media Query demo page.</h1>
+        <p>Screen Size: 1025px</p>
+    </div>
+    <div class="box box4">
+        <h1>This is Media Query demo page.</h1>
+        <p>Screen Size: 1440px</p>
+    </div>
 </body>
 
 </html>
