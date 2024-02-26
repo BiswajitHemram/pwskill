@@ -179,6 +179,7 @@ img[alt="hambrger"]{
 
     .intro-line-2 > h1{
         font-size: 40px;
+        white-space: nowrap;
     }
 
     .intro-line-1 > h3{
