@@ -98,14 +98,14 @@ img[alt="Project Image"]{
     font-size: 1.2em;
 }
 
-section h1, .contact > h1{
+section h1{
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 section .hr-line{
-    border: 3px solid  #003af7;
-    width: 14%;
+    border: 5px solid  #003af7;
+    width: 168px;
     border-radius: 5px;
 }
 
@@ -114,6 +114,7 @@ section .heading{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 /* footer */
@@ -124,7 +125,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
 }
 
 img[alt="social"]{
@@ -139,7 +140,7 @@ img[alt="social"]{
 
 .contact > h1{
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .socials{
@@ -150,4 +151,47 @@ img[alt="social"]{
 img[alt="hambrger"]{
     width: 20px;
     display: none;
+}
+
+/* media query */
+@media  screen and (max-width: 576px){
+    #navbar > ul {
+        display: none;
+    }
+
+    img[alt="hambrger"]{
+        /* width: 20px; */
+        display: block;
+    }
+    
+    .intro{
+        flex-wrap: wrap;
+    }
+
+    .intro-line-1{
+        flex-direction: column;
+    }
+
+    .intro-line-2 > h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .intro-line-2 > h1{
+        font-size: 40px;
+    }
+
+    .intro-line-1 > h3{
+        font-size: 20px;
+    }
+
+    img[alt="pc-image"]{
+        width: 65vw;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    img[alt="Project Image"]{
+        width: 55vw;
+    }
 }
