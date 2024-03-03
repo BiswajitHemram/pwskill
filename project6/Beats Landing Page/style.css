@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #0f0f10;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0 15vw;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 30px 0;
+}
+
+nav > .right-side-nav{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+nav > .right-side-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+a{
+    font-weight: 700;
+}
+
+#shopBtn{
+    background: #1e1e21;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+
+/* headphone area */
+img[alt="Studio 3"]{
+    width: 230px;
+    position: relative;
+    top: -250px;
+    left: 70px;
+}
+
+.headphone{
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    height: 440px;
+}
+
+.right-side-headphone{
+    margin-left: 180px;
+}
+
+img[alt="On Ear Title"]{
+    margin-left: 60px;
+    width: 340px;
+}
+
+.headphone-name{
+    font-weight: 600;
+    font-size: 46px;
+}
+
+.title-overview{
+    margin: 25px 0px;
+}
+
+p.headphone-info{
+    width: 65%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #bdc0c2;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.shopping-bag-section{
+    display: flex;
+    padding: 10px 25px;
+    background: #1e1e21;
+    width: fit-content;
+    border-radius: 8px;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shopping-bag-section img, p, span{
+    background:transparent;
+}
+
+/* section for adding social media icons */
+.social-media-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.social-media-section img{
+    scale: 0.8;
+}
+
+/* specs of product */
+
+img[alt="Specs Logo"]{
+    scale: 0.8;
+    margin-bottom: 20px;
+}
+
+.product-specs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specs-detail{
+    display: flex;
+}
+
+.specs-icons > p{
+    font-size: 12px;
+}
+
+.specs-icons > p:last-child{
+    color: #bdc0c2;
+    font-size: 10px;
+    margin-top: 5px;
+    width: 70%;
+}
+
+.specs-icons:nth-child(odd){
+    margin: 0 0 20px 90px;
+}
+
+.specs-icons:nth-child(even){
+    margin-bottom: 20px;
+}
+
+.product-specs img{
+    scale: 0.8;
+}
+
+/* creating case */
+#case{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img[alt="Case Logo"]{
+    margin-bottom: 20px;
+}
+
+#case img{
+    background-color: transparent;
+    scale: 0.8;
+}
+.case-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.case-info{
+    width: 27%;
+}
+
+.case-info p:first-child{
+    margin-bottom: 20px;
+}
+
+#info-btn{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #1e1e21;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* buy product */
+.buy-product{
+    margin-top: 70px;
+    padding: 40px 0;
+    background-color: #1e1e21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 8px;
+}
+
+.buy-product-left{
+    background: transparent;
+    width: 25%;
+}
+
+.buy-product-left h3 {
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.buy-product-left p{
+    font-size: 14px;
+    color: #bdc0c2;
+    margin-bottom: 15px;
+}
+
+.buy-product img{
+    background: transparent;
+}
+
+#buybtn{
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* choose your style */
+.choose-your-style{
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px;
+}
+
+img[alt="Choose Your Style"]{
+    scale: 0.3;
+}
+
+.product-item{
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.product-card{
+    width: 130px;
+    height: 130px;
+    background-color: #1e1e21;
+    position: relative;
+    border-radius: 8px;
+}
+.product-card > img[alt]{
+    width: 75px;
+    height: 100px;
+    background: transparent;
+    position: absolute;
+    top: -45px;
+    left: 30px;
+}
+
+.product-info{
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    align-items: flex-start;
+}
+
+.product-info div {
+    background: #0a0a0b;
+    border-radius: 8px;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.product-info div img[alt]{
+    width: 13px;
+    height: 13px;
+}
+
+.product-info p span{
+color: #bdc0c2;
+}
+
+/* footer */
+footer{
+    margin: 100px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer > ul > li:first-child > a{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+footer > ul > li:first-child{
+    margin-bottom: 10px;
+}
+
+footer > ul > li > a{
+    font-size: 12px;
+    color: #BDC0C2;
+    font-weight: 500;
+}
+
+.subscription{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #181A1B;
+}
+
+.subscription input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.subscription-button{
+    background: #0A0A0B;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer-subscription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-account{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.social-account img{
+    cursor: pointer;
+}
+
+.upArrow{
+    position: absolute;
+    right: -164px;
+    scale: 0.8;
+    cursor: pointer;
+}
